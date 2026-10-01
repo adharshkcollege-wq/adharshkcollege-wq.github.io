@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adharsh Krishnan | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+            --border: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        header p.tagline {
+            font-size: 1.25rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            color: var(--text-primary);
+            border-left: 4px solid var(--accent);
+            padding-left: 0.75rem;
+        }
+
+        /* Statement Section */
+        .statement-card {
+            background-color: var(--card-bg);
+            padding: 1.75rem;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            text-align: center;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card {
+            background-color: var(--card-bg);
+            padding: 1.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .skill-card h3 {
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Projects Section */
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 1.75rem;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .project-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .project-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .project-role {
+            font-size: 0.85rem;
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Adharsh Krishnan</h1>
+            <p class="tagline">Finance Student & Aspiring Sales & Trading Professional</p>
+            <div class="contact-info">
+                <span>Monroe Township, NJ</span>
+                <a href="mailto:adharshk003@gmail.com">adharshk003@gmail.com</a>
+                <a href="tel:7324022113">(732) 402-2113</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <!-- Personal Statement -->
+        <section>
+            <h2>Personal Statement</h2>
+            <div class="statement-card">
+                Driven Rutgers Finance undergraduate combining rigorous valuation training, high-frequency transaction experience, and analytical consulting expertise to pursue a high-impact career in Sales and Trading.
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Financial Modeling & Valuation</h3>
+                    <p>Advanced Excel training through the Road to Wall Street cohort and Wall Street Prep (WSP) crash courses, focusing on financial statement analysis and corporate valuation.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Quantitative & Market Analysis</h3>
+                    <p>Analyzing financial disclosures, evaluating company performance, and conducting rigorous market and sector research for investment insights.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Sales & Execution</h3>
+                    <p>High-volume transaction management and client relationship execution, overseeing POS workflows and direct consumer interactions[cite: 1].</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Technical Stack</h3>
+                    <p>Microsoft Excel, Python, Computer Applications, automated workflow creation, and AI client communication integration[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-title">Private Equity Vet Hospital Operational Assessment</span>
+                        <span class="project-role">Consulting Analyst | Rutgers Consulting Group</span>
+                    </div>
+                    <p class="project-desc">
+                        Consulted for a private equity firm by analyzing over 100 hours of complex scheduling data[cite: 1] to gauge operating capacity across veterinary hospitals. Evaluated utilization metrics to strategically determine the financial and operational viability of extending clinic hours or hiring additional veterinary staff.
+                    </p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-title">Restaurant Marketing & Growth Analytics Campaign</span>
+                        <span class="project-role">Senior Consulting Analyst | Rutgers Consulting Group</span>
+                    </div>
+                    <p class="project-desc">
+                        Served as a Senior Analyst leading a strategic consulting engagement for a Pennington, NJ-based restaurant. Spearheaded comprehensive data collection, designed targeted marketing campaigns, and optimized customer outreach frameworks to drive higher local engagement and sales growth.
+                    </p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-title">Road to Wall Street Equity Research Report</span>
+                        <span class="project-role">Financial Analyst | Road to Wall Street Cohort 16</span>
+                    </div>
+                    <p class="project-desc">
+                        Building an intensive equity research report as part of a selective finance training program[cite: 1]. Incorporates thorough sector research, macro market analysis, financial statement forecasting, and a complete valuation suite.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Adharsh Krishnan. Built for GitHub Portfolio Deployment.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
